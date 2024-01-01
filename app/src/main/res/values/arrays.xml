@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="role">
+        <item>@string/client</item>
+        <item>@string/supplier</item>
+    </array>
+
+    <array name="categorie">
+        <item>@string/clothing</item>
+        <item>@string/fragrance</item>
+        <item>@string/toy</item>
+    </array>
+</resources>

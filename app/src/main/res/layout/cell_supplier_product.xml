@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/imageView_tshirt"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            android:background="@color/light_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!-- Additional TextViews for sizes -->
+
+        <!-- Replace with your arrow resource -->
+
+        <TextView
+            android:id="@+id/textView_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="158dp"
+            android:layout_toEndOf="@id/imageView_tshirt"
+            android:text="@string/text_place_holder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="@+id/imageView_tshirt"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_description"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/price_place_holder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_description" />
+
+        <TextView
+            android:id="@+id/textView_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_price"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/stock_place_holder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_price" />
+
+        <ImageView
+            android:id="@+id/imageView_arrow"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/arrow_forward"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView_discount"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/percent_icone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <!-- Replace with your discount resource -->
+
+        <!-- Replace with your discount resource -->
+
+        <TextView
+            android:id="@+id/textView_size1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_price"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="48dp"
+            android:text="@string/size_and_number_place_holder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_offer" />
+
+        <TextView
+            android:id="@+id/textView_size2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_price"
+            android:layout_marginStart="158dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/size_and_number_place_holder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_size3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_price"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="100dp"
+            android:text="@string/size_and_number_place_holder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintEnd_toStartOf="@+id/imageView_discount"
+            app:layout_constraintTop_toBottomOf="@+id/textView_offer" />
+
+        <TextView
+            android:id="@+id/textView_size4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_price"
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/size_and_number_place_holder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView_discount"
+            app:layout_constraintTop_toBottomOf="@+id/textView_offer"
+            app:layout_constraintVertical_bias="0.977" />
+
+        <TextView
+            android:id="@+id/textView_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_price"
+            android:layout_marginTop="32dp"
+            android:text="@string/offer_place_holder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintEnd_toStartOf="@+id/imageView_arrow"
+            app:layout_constraintHorizontal_bias="0.622"
+            app:layout_constraintStart_toEndOf="@+id/textView_price"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!-- Replace with your discount resource -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

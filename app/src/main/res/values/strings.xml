@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">icomerch</string>
+    <string name="to_connect">Se connecter</string>
+    <string name="create_account">Créer un compte</string>
+    <string name="icon_description">L\\\'image représente deux sacs de shopping animés avec des
+        visages souriants : un orange et un bleu. Chacun porte des anses marron et une étiquette de
+        solde rouge. Ils ont des bras et des jambes et se tiennent sur des bases rondes blanches.
+        En dessous, le mot "ICOMERCH" est écrit en bleu.</string>
+    <string name="label_role">Rôle</string>
+    <string name="label_firstname">Prénom</string>
+    <string name="label_lastname">Nom</string>
+    <string name="label_mail">Mail</string>
+    <string name="label_password">Mot de passe</string>
+    <string name="label_confirm_password">Confirmer mot de passe</string>
+    <string name="label_zip_code">Code postal</string>
+    <string name="Inscription">Inscription</string>
+    <string name="Connection">Connexion</string>
+    <string name="next">Suivant</string>
+    <string name="clothing">Vêtement</string>
+    <string name="toy">Jouet</string>
+    <string name="fragrance">Parfum</string>
+    <string name="client">Client</string>
+    <string name="supplier">Fournisseur</string>
+    <string name="home">Accueil</string>
+    <string name="search">Rechercher</string>
+    <string name="search_a_product">Rechercher un produit</string>
+    <string name="sales">Promotion</string>
+    <string name="view_my_cart">Voir mon panier</string>
+    <string name="manage_my_orders">Gérer mes commandes</string>
+    <string name="orders_page_name">Commandes</string>
+    <string name="edit_my_interests">Modifier mes centres d\'intérêts</string>
+    <string name="interest">Centre d\'intérêts</string>
+    <string name="arrow_description">Flèche pointant vers la gauche pour aller à la page précédente\n</string>
+    <string name="ForgottenPassword"><u>Mot de passe oubliée\n</u></string>
+    <string name="title_home">accueil</string>
+    <string name="title_search">rechercher</string>
+    <string name="title_cart">panier</string>
+    <string name="title_profile">profil</string>
+    <string name="Profile">Profil</string>
+    <string name="title_add_product">Ajouter produit\n</string>
+    <string name="title_order_managing">gestion commande\n</string>
+    <string name="searchbar_hint">Rechercher un produit\n</string>
+    <string name="indicationOffer">Cliquer sur un -> pour le modifier sur % pour créer une offre</string>
+    <string name="Promotion"><b>Promotion</b></string>
+    <string name="text_place_holder">%s</string>
+    <string name="price_place_holder">Prix : %1$.2f €</string>
+    <string name="offer_place_holder">Offre : %1$d%</string>
+    <string name="stock_place_holder">Stock : %1$d</string>
+    <string name="size_and_number_place_holder">%s : %1$d</string>
+    <string name="label_reference">Référence</string>
+    <string name="label_description">Description</string>
+    <string name="label_category">Catégorie</string>
+    <string name="quantity"><b>Quantité</b></string>
+    <string name="Confirm_add_product">Confirmer l\'ajout</string>
+    <string name="size_type">Type Taille \n <i>%s</i></string>
+    <string name="change_image">Changer image</string>
+    <string name="label_price">Prix</string>
+    <string name="picture"><b>Image</b></string>
+
+</resources>

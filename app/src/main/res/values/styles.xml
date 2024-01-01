@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="extended_button_base" parent="Widget.Material3.Button">
+        <item name="android:layout_width">@dimen/button_width_278</item>
+        <item name="android:layout_height">@dimen/button_min_height</item>
+        <item name="android:textSize">@dimen/large_button_text_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="extended_button_blue" parent="extended_button_base">
+        <item name="backgroundTint">@color/blue_cobalt</item>
+    </style>
+
+    <style name="extended_button_orange" parent="extended_button_base">
+        <item name="backgroundTint">@color/bright_orange</item>
+    </style>
+
+    <style name="extended_button_green" parent="extended_button_base">
+        <item name="backgroundTint">@color/green</item>
+    </style>
+
+    <style name="text_button_underline" parent="Widget.Material3.Button.TextButton">
+    </style>
+
+    <style name="underline_text_button" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="text_view_page_name" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/page_naming_text_size</item>
+    </style>
+
+    <style name="text_view_light_color" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="text_view_orange" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/strength_orange</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="text_view_promotion" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">20sp</item>
+    </style>>
+
+    <style name="text_view_classic" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="text_input_layout_inscription" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="android:textSize">@dimen/page_naming_text_size</item>
+        <item name="android:textColorHint">@color/bright_orange</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="boxStrokeColor">@color/light_gray</item>
+    </style>
+
+    <style name="text_input_layout_profile" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="android:textSize">@dimen/page_naming_text_size</item>
+        <item name="android:textColorHint">@color/bright_orange</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="boxStrokeColor">@color/light_gray</item>
+        <item name="endIconTint">@color/blue_cobalt</item>
+        <item name="endIconMinSize">60dp</item>
+    </style>
+
+    <style name="text_input_layout_dropdown_inscription" parent="Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="android:textSize">@dimen/page_naming_text_size</item>
+        <item name="android:textColorHint">@color/bright_orange</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="boxStrokeColor">@color/light_gray</item>
+    </style>
+
+   <style name="checkbox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="android:minHeight">80dp</item>
+        <item name="android:minWidth">80dp</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="checkbox_little" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:minWidth">50dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="SnackbarTextStyle" parent="Widget.Design.Snackbar">
+        <item name="android:maxLines">3</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+
+</resources>

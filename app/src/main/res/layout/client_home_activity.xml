@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/icon_description"
+        app:layout_constraintBottom_toTopOf="@+id/indicationOffer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/icon_without_background" />
+
+    <TextView
+        android:id="@+id/namePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/home"
+        android:textAppearance="@style/text_view_page_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/includeSearchBar"
+        layout="@layout/common_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/namePage"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/indicationOffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center_vertical"
+        android:text="@string/Promotion"
+        android:textAppearance="@style/text_view_promotion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namePage" />
+
+    <ImageButton
+        android:id="@+id/fragrancebutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/iconBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indicationOffer"
+        app:layout_constraintVertical_bias="0.541"
+        app:srcCompat="@drawable/perfume_svgrepo_com"></ImageButton>
+
+    <ImageView
+        android:id="@+id/hotSales3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="80dp"
+        android:rotation="320"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namePage"
+        app:srcCompat="@drawable/sales" />
+
+    <ImageButton
+        android:id="@+id/clothingButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/toyButton"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toEndOf="@+id/fragrancebutton"
+        app:layout_constraintTop_toBottomOf="@+id/indicationOffer"
+        app:srcCompat="@drawable/clothing_icon"></ImageButton>
+
+    <ImageView
+        android:id="@+id/hotSales1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:rotation="320"
+        app:layout_constraintStart_toEndOf="@+id/hotSales3"
+        app:layout_constraintTop_toBottomOf="@+id/namePage"
+        app:srcCompat="@drawable/sales" />
+
+    <ImageButton
+        android:id="@+id/toyButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/iconBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fragrancebutton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/toy_icon"></ImageButton>
+
+    <ImageView
+        android:id="@+id/hotSales2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:rotation="320"
+        app:layout_constraintStart_toEndOf="@+id/hotSales1"
+        app:layout_constraintTop_toBottomOf="@+id/namePage"
+        app:srcCompat="@drawable/sales" />
+
+    <ImageView
+        android:id="@+id/iconBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_marginTop="235dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/includeSearchBar"
+        app:srcCompat="@drawable/icon_background">
+
+    </ImageView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonManagingOrder"
+        style="@style/extended_button_orange"
+
+        android:text="@string/manage_my_orders"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconBackground" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonViewMyCart"
+        style="@style/extended_button_blue"
+        android:text="@string/view_my_cart"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonManagingOrder" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonEditMyInterest"
+        style="@style/extended_button_orange"
+        android:text="@string/edit_my_interests"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonViewMyCart" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCreateAccount"
+        style="@style/extended_button_blue"
+        android:text="@string/Profile"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEditMyInterest" />
+
+    <include
+        android:id="@+id/includeNavBar"
+        layout="@layout/client_bottom_navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
